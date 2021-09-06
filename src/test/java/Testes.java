@@ -6,13 +6,11 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import java.io.IOException;
-import java.net.URISyntaxException;
 
 public class Testes {
 
     private static List<Game> gameList;
-
+    
     @BeforeClass
     public static void initClass() throws URISyntaxException {
         Path caminho = Paths.get(ClassLoader.getSystemResource("vendas-games.csv").toURI());
