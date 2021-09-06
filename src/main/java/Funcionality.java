@@ -15,7 +15,7 @@ public class Funcionality {
                                             String publisher){
         List<Game> gamesByPublisher = new ArrayList<>();
 
-        games.stream().filter((game -> game.getPublisher().replaceAll("\\s+", "").equals(publisher))).forEach(game -> gamesByPublisher.add(game));
+        games.stream().filter((game -> game.getPublisher().equals(publisher))).forEach(game -> gamesByPublisher.add(game));
 
         return gamesByPublisher;
     }
